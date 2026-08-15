@@ -12,6 +12,7 @@
 	- 터미널에 아래 명령어를 입력해 Python과 Git 버전을 확인합니다.
 
 ### python --version
++
 ### git --version
 
 //=================
