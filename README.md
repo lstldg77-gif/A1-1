@@ -1,4 +1,4 @@
-다음 4가지 산출물을 포함한 Python 콘솔 프로그램 1개와 GitHub 저장소 1개를 완성한다.
+# 다음 4가지 산출물을 포함한 Python 콘솔 프로그램 1개와 GitHub 저장소 1개를 완성한다.
 
 동작하는 프롬프트 관리 프로그램
 터미널에서 메뉴 번호를 입력해 기능을 선택하는 콘솔 기반 프로그램
@@ -6,7 +6,7 @@
 프로그램 실행 중에 추가한 프롬프트와 즐겨찾기 상태가 유지된다 (종료 시 초기화)
 이전 미션에서 작성한 프롬프트가 기본 데이터로 최소 3개 이상 등록되어 있다
 
-GitHub 저장소
+## GitHub 저장소
 프로젝트 코드가 GitHub에 업로드되어 있다
 최소 10개 이상의 의미 있는 커밋이 존재한다 (기능 단위 커밋)
 최소 1회 이상의 브랜치 생성 및 병합(checkout, merge) 기록이 있다
@@ -14,13 +14,13 @@ README.md에 프로그램 설명과 실행 방법이 작성되어 있다
 코드 품질
 함수를 사용하여 기능별로 코드가 분리되어 있다
 
-제출물
+$$ 제출물
 GitHub 저장소 URL
 개발 환경 설정 스크린샷 (VSCode, Python 버전, Git 설정)
 프로그램 실행 결과 스크린샷 (메뉴, 프롬프트 추가, 목록, 검색 등)
 git log --oneline --graph 결과 스크린샷
 
-과제 목표
+## 과제 목표
 이 과제를 마친 후, 학습자는 아래를 스스로 설명할 수 있어야 한다.
 VSCode에서 Python 파일을 생성하고 실행할 수 있다.
 터미널에서 Python/Git 버전을 확인하고 필요한 설정을 점검할 수 있다.
@@ -30,7 +30,7 @@ init, add, commit, push, pull, checkout, clone, merge가 각각 무엇을 하는
 브랜치를 생성하고 병합할 수 있다.
 GitHub에 코드를 업로드하고 관리할 수 있다.
 
-과제목표 설
+# 과제목표 설명
 1. VSCode에서 Python 파일을 생성하고 실행할 수 있다
 설명 내용: VSCode는 소스 코드를 작성하는 편집기(IDE)입니다. 새 파일을 만들 때 확장자를 .py로 지정하면 파이썬 파일이 됩니다. 작성한 코드는 VSCode 내장 터미널에서 python 파일이름.py 명령어를 입력해 실행할 수 있습니다.
 
@@ -64,9 +64,7 @@ git config --global user.email "내이메일@email.com"
 
 4. Git이 무엇이고 왜 필요한지 설명할 수 있다
 설명 내용:
-
 Git이란?: 코드의 변경 이력(수정 역사)을 시간 순서대로 기록하고 관리해 주는 버전 관리 시스템(VCS)입니다.
-
 왜 필요한가?: 코드를 수정하다가 에러가 났을 때 예전 상태로 쉽게 되돌릴 수 있고, 여러 사람이 협업할 때 누가 어떤 부분을 고쳤는지 추적할 수 있기 때문에 개발자에게 필수적입니다.
 
 5. Git 주요 명령어(init, add, commit, push, pull, checkout, clone, merge)의 역할
@@ -88,12 +86,61 @@ merge: 다른 브랜치에서 작업한 내용을 현재 브랜치와 하나로 
 
 6. 브랜치를 생성하고 병합할 수 있다
 설명 내용:
-
 브랜치(Branch)란?: 기존 코드(main)를 복사해서 독립적으로 새로운 기능(예: 프롬프트 목록 보기 기능)을 개발할 수 있는 나만의 작업 공간입니다.
-
 생성과 병합: git checkout -b 새브랜치이름으로 브랜치를 만들어 안전하게 기능을 개발한 뒤, 작업이 끝나면 main 브랜치로 돌아와(git checkout main) git merge 새브랜치이름으로 합칩니다.
 
 7. GitHub에 코드를 업로드하고 관리할 수 있다
 설명 내용: GitHub는 Git으로 관리하는 코드 저장소를 온라인에 보관하고 공유할 수 있는 클라우드 플랫폼입니다. 내 컴퓨터에서 작업한 내용을 git remote add origin URL로 연결한 뒤 git push를 통해 업로드하고, 웹 화면에서 다른 사람들과 코드를 공유하거나 관리할 수 있습니다.
 
-명령 팔레트를 여는 공통 단축키인 Ctrl + Shift + P (Mac은 Cmd + Shift + P)를 기억해 두시면 아래 명령어들을 검색해서 실행할 수도 있습니다.1. 🔍 파일 및 검색 (Navigation)작업 중인 파일 사이를 빠르게 이동하거나 코드를 찾을 때 사용하는 필수 명령어입니다.기능Windows / LinuxmacOS빠른 파일 열기 (Quick Open)Ctrl + PCmd + P명령 팔레트 열기Ctrl + Shift + PCmd + Shift + P전체 파일에서 검색Ctrl + Shift + FCmd + Shift + F현재 파일에서 찾기Ctrl + FCmd + F정의로 이동 (Go to Definition)F12F122. 📝 편집 및 줄 관리 (Editing & Lines)코드를 복사, 이동, 삭제할 때 마우스를 쓰지 않고 빠르게 처리할 수 있습니다.기능Windows / LinuxmacOS현재 줄 복사 (아래로)Shift + Alt + DownShift + Option + Down현재 줄 이동 (위/아래)Alt + Up / DownOption + Up / Down현재 줄 삭제Ctrl + Shift + KCmd + Shift + K코드 정렬 (포맷팅)Shift + Alt + FShift + Option + F주석 토글 (주석 처리/해제)Ctrl + /Cmd + /3. 👥 멀티 커서 및 선택 (Multi-Cursor & Selection)동시에 여러 곳을 수정하거나 원하는 단어를 한 번에 선택할 때 유용합니다.기능Windows / LinuxmacOS동일한 단어 연속 선택Ctrl + DCmd + D모든 동일한 단어 한 번에 선택Ctrl + Shift + LCmd + Shift + L원하는 위치에 멀티 커서 추가Alt + 클릭Option + 클릭줄 단위 다중 커서Ctrl + Alt + Down/UpCmd + Option + Down/Up4. 🪟 화면 및 탭 관리 (View & Layout)에디터 화면을 분할하거나 사이드바를 숨길 때 사용합니다.기능Windows / LinuxmacOS에디터 화면 분할 (좌우)Ctrl + \Cmd + \분할된 화면 이동Ctrl + 숫자 (1, 2...)Cmd + 숫자 (1, 2...)사이드바 토글 (숨기기/보이기)Ctrl + BCmd + B통합 터미널 열기/닫기`Ctrl + ```Cmd + ``
+VS Code(Visual Studio Code)에서 작업 효율을 극적으로 높여주는 **가장 유용한 단축키(명령어) 목록**을 운영체제별(Windows/Mac)로 정리해 드립니다.
+
+명령 팔레트를 여는 공통 단축키인 `Ctrl + Shift + P` (Mac은 `Cmd + Shift + P`)를 기억해 두시면 아래 명령어들을 검색해서 실행할 수도 있습니다.
+
+# VS Code(Visual Studio Code)에서 작업 효율을 극적으로 높여주는 가장 유용한 단축키(명령어) 목록
+
+## 1. 🔍 파일 및 검색 (Navigation)
+
+작업 중인 파일 사이를 빠르게 이동하거나 코드를 찾을 때 사용하는 필수 명령어입니다.
+
+| 기능 | Windows / Linux | macOS |
+| **빠른 파일 열기 (Quick Open)** | `Ctrl + P` | `Cmd + P` |
+| **명령 팔레트 열기** | `Ctrl + Shift + P` | `Cmd + Shift + P` |
+| **전체 파일에서 검색** | `Ctrl + Shift + F` | `Cmd + Shift + F` |
+| **현재 파일에서 찾기** | `Ctrl + F` | `Cmd + F` |
+| **정의로 이동 (Go to Definition)** | `F12` | `F12` |
+
+## 2. 📝 편집 및 줄 관리 (Editing & Lines)
+
+코드를 복사, 이동, 삭제할 때 마우스를 쓰지 않고 빠르게 처리할 수 있습니다.
+
+| 기능 | Windows / Linux | macOS |
+| **현재 줄 복사 (아래로)** | `Shift + Alt + Down` | `Shift + Option + Down` |
+| **현재 줄 이동 (위/아래)** | `Alt + Up / Down` | `Option + Up / Down` |
+| **현재 줄 삭제** | `Ctrl + Shift + K` | `Cmd + Shift + K` |
+| **코드 정렬 (포맷팅)** | `Shift + Alt + F` | `Shift + Option + F` |
+| **주석 토글 (주석 처리/해제)** | `Ctrl + /` | `Cmd + /` |
+
+## 3. 👥 멀티 커서 및 선택 (Multi-Cursor & Selection)
+
+동시에 여러 곳을 수정하거나 원하는 단어를 한 번에 선택할 때 유용합니다.
+
+| 기능 | Windows / Linux | macOS |
+| **동일한 단어 연속 선택** | `Ctrl + D` | `Cmd + D` |
+| **모든 동일한 단어 한 번에 선택** | `Ctrl + Shift + L` | `Cmd + Shift + L` |
+| **원하는 위치에 멀티 커서 추가** | `Alt + 클릭` | `Option + 클릭` |
+| **줄 단위 다중 커서** | `Ctrl + Alt + Down/Up` | `Cmd + Option + Down/Up` |
+
+## 4. 🪟 화면 및 탭 관리 (View & Layout)
+
+에디터 화면을 분할하거나 사이드바를 숨길 때 사용합니다.
+
+| 기능 | Windows / Linux | macOS |
+| **에디터 화면 분할 (좌우)** | `Ctrl + \` | `Cmd + \` |
+| **분할된 화면 이동** | `Ctrl + 숫자 (1, 2...)` | `Cmd + 숫자 (1, 2...)` |
+| **사이드바 토글 (숨기기/보이기)** | `Ctrl + B` | `Cmd + B` |
+| **통합 터미널 열기/닫기** | `Ctrl + `` | `Cmd + `` |
+
+> ## ** 자주 사용하는 단축키는 손에 익히는 것이 가장 좋지만,
+> 기억이 나지 않을 때는 **`Ctrl + Shift + P` (Mac: `Cmd + Shift + P`)**를
+> 눌러 원하는 기능의 키워드(예: `format`, `terminal` 등)를
+> 검색하면 해당 단축키와 함께 바로 실행할 수 있습니다.
